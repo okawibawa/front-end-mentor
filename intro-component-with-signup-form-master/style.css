@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-image: url(./images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    color: white;
+    min-height: 100vh;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}
+
+.left-container,
+.right-container {
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+.left-container h1 {
+    font-weight: 700;
+    line-height: 40px;
+    margin-top: 60px;
+}
+
+.left-container p {
+    padding: 0 20px 0;
+    margin: 20px auto 40px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.right-container small {
+    display: block;
+}
+
+.box {
+    min-width: 300px;
+    border-radius: 6px;
+}
+
+.box-promo {
+    box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.18);
+    cursor: pointer;
+    background-color: hsl(248, 32%, 49%);
+    padding: 15px 80px;
+    margin-bottom: 20px;
+}
+
+.box-info {
+    box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.18);
+    background-color: white;
+    padding: 0 15px 15px;
+    margin-bottom: 30px;
+}
+
+.form-control {
+    position: relative;
+}
+
+.form-control input {
+    cursor: pointer;
+    padding: 15px 10px;
+    max-width: 95%;
+    border-radius: 4px;
+    border: 1px solid hsl(246, 25%, 77%);
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.form-control input:focus {
+    border: 1px solid hsl(250, 11%, 11%);
+}
+
+.form-control input::placeholder {
+    color: hsl(250, 11%, 11%);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.form-control small {
+    color: black;
+    opacity: 0;
+    text-align: right;
+    padding-right: 15px;
+    font-size: 10px;
+    font-style: italic;
+    color: hsl(0, 100%, 74%);
+}
+
+.form-control.error input {
+    border: 1px solid hsl(0, 100%, 74%);
+    color: hsl(0, 100%, 74%);
+}
+
+.form-control.error input::placeholder {
+    border: 1px solid hsl(0, 100%, 74%);
+    color: hsl(0, 100%, 74%);
+}
+
+button {
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    border: none;
+    margin-top: 20px;
+    width: 95%;
+    padding: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0px 4px 0px 0px rgba(29, 153, 99, 1);
+}
+
+button:hover {
+    background-color: hsl(154, 55%, 39%);
+    box-shadow: 0px 4px 0px 0px hsl(154, 59%, 28%);
+    transition: ease-in-out 0.2s;
+}
+
+.form-control img {
+    position: absolute;
+    right: 30px;
+    top: 37%;
+    opacity: 0;
+}
+
+.form-control.error img {
+    opacity: 1;
+}
+
+.small-info {
+    font-size: 12px;
+    color: hsl(246, 25%, 77%);
+    margin: 10px;
+    padding: 0 15px;
+}
+
+.small-info a {
+    color: hsl(0, 100%, 74%);
+    text-decoration: none;
+}
+
+footer {
+    color: white;
+    font-size: 12px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+footer span {
+    display: block;
+}
+
+footer .fa {
+    color: hsl(154, 59%, 51%);
+}
+
+footer a {
+    text-decoration: none;
+    color: #424874;
+}
+
+@media screen and (min-width: 460px) {
+    .left-container,
+    .right-container {
+        max-width: 420px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .main-container {
+        align-items: center;
+        justify-content: center;
+        margin: 20px auto 0;
+        align-content: center;
+    }
+
+    .left-container,
+    .right-container {
+        align-items: center;
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    .left-container {
+        text-align: left;
+    }
+
+    .left-container h1 {
+        margin-top: 20px;
+        line-height: 50px;
+        font-size: 42px;
+    }
+
+    .left-container p {
+        padding: 0;
+        font-size: 14px;
+    }
+
+    .box-promo {
+        padding: 15px;
+    }
+
+    .form-control input {
+        padding: 10px 5px;
+    }
+
+    button {
+        padding: 15px;
+    }
+
+    footer {
+        margin: 15px auto 10px;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    .main-container {
+        margin: 130px 0;
+    }
+
+    .left-container {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .main-container {
+        justify-content: center;
+        margin: 120px auto;
+    }
+
+    .left-container,
+    .right-container {
+        max-width: 500px;
+    }
+
+    .left-container {
+        text-align: left;
+    }
+
+    .left-container h1 {
+        font-size: 48px;
+    }
+
+    .left-container p {
+        font-size: 16px;
+    }
+
+    .form-control input {
+        padding: 15px 10px;
+    }
+
+    footer {
+        margin: 100px auto 20px;
+    }
+}
