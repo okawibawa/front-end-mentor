@@ -231,6 +231,7 @@ footer a {
 
 @media screen and (min-width: 950px) {
     .main-container {
+        justify-content: center;
         margin: 130px 0;
     }
 
