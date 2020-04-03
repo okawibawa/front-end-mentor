@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px 0;
+  font-family: 'Libre Franklin';
+  width: 320px;
+  min-height: 100vh;
+}
+
+.header {
+  width: 100%;
+}
+
+.logo {
+  width: 70px;
+  padding: 50px 0 0;
+}
+
+.title {
+  padding: 20px;
+}
+
+.title h1 {
+  font-size: 24px;
+}
+
+.title h1 span {
+  font-weight: 300;
+  color: hsl(0, 0%, 59%);
+}
+
+.title p {
+  font-size: 12px;
+  margin-top: 20px;
+  color: black;
+}
+
+.page-hero {
+  margin-bottom: 100px;
+}
+
+.page-hero img {
+  width: 320px;
+}
+
+.email-cta {
+  width: 100%;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.email-cta input {
+  width: 100%;
+  padding: 15px 30px;
+  border-radius: 50px;
+  border: 1px solid hsl(223, 100%, 88%);
+  display: block;
+}
+
+.email-cta input::placeholder {
+  font-family: 'Libre Franklin';
+  color: hsl(223, 100%, 88%);
+}
+
+.email-cta input:focus {
+  border: 1px solid hsl(224, 13%, 48%);
+  outline: none;
+}
+
+.email-cta.error input {
+  border: 1px solid hsl(354, 100%, 66%);
+}
+
+.email-cta.error input::placeholder {
+  color: hsl(354, 100%, 66%);
+}
+
+.email-cta.error small {
+  font-size: 12px;
+  color: hsl(354, 100%, 66%);
+  font-style: italic;
+  display: block;
+  text-align: left;
+  padding: 0 30px;
+  font-weight: 600;
+}
+
+.email-cta button {
+  cursor: pointer;
+  font-family: 'Libre Franklin';
+  color: white;
+  font-weight: 600;
+  width: 100%;
+  margin: 5px 0 10px;
+  padding: 15px 30px;
+  border-radius: 50px;
+  border: 1px solid hsl(223, 87%, 63%);
+  background-color: hsl(223, 87%, 63%);
+  box-shadow: 0px 10px 15px -4px rgba(79, 125, 243, 0.34);
+  transition: ease-out 0.6s;
+}
+
+.email-cta button:hover {
+  transform: scale(1.04);
+}
+
+.email-cta button:focus {
+  outline: none;
+}
+
+.social-media-links {
+  text-align: center;
+}
+
+.social-media-links a {
+  list-style: none;
+  display: inline-block;
+  margin: 0 auto 30px;
+}
+
+.border {
+  border: 1px solid hsl(223, 100%, 88%);
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+
+.social-media-links .border:hover {
+  background-color: hsl(223, 87%, 63%);
+  border: 1px solid hsl(223, 87%, 63%);
+}
+
+.social-media-links i {
+  text-align: center;
+  margin: 6px auto;
+  color: hsl(223, 87%, 63%);
+}
+
+.social-media-links .border:hover i {
+  color: white;
+}
+
+.social-media-links a:nth-child(2) {
+  margin: 0 15px;
+}
+
+.copyright {
+  margin-bottom: 10px;
+}
+
+.attribution {
+  color: hsl(0, 0%, 59%);
+}
+
+.attribution a {
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  text-decoration: none;
+  color: hsl(223, 87%, 63%);
+}
+
+.attribution i {
+  color: hsl(223, 87%, 63%);
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 500px;
+  }
+
+  .header {
+    width: 100%;
+  }
+
+  .page-hero img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 550px;
+  }
+
+  .header {
+    width: 100%;
+  }
+
+  .header h1 {
+    font-size: 36px;
+  }
+
+  .header p {
+    font-size: 16px;
+  }
+
+  form {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header input {
+    display: inline-block;
+    width: 65%;
+  }
+
+  .header button {
+    margin: 0;
+    width: 32%;
+  }
+
+  .email-cta.error small {
+    font-size: 12px;
+    color: hsl(354, 100%, 66%);
+    font-style: italic;
+    position: absolute;
+    top: 50px;
+  }
+
+  .page-hero img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    width: 650px;
+  }
+
+  .header input,
+  .header button {
+    padding: 15px 30px;
+  }
+}
