@@ -1,114 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="./images/favicon-32x32.png"
-        />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-        <!-- CSS link -->
-        <link rel="stylesheet" href="style.css" />
+    <!-- CSS link -->
+    <link rel="stylesheet" href="style.css" />
 
-        <!-- icon link -->
-        <link
-            rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-            integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
-            crossorigin="anonymous"
-        />
+    <!-- icon link -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
 
-        <title>Frontend Mentor | Single Price Grid Component</title>
+    <title>Frontend Mentor | Single Price Grid Component</title>
+  </head>
+  <body>
+    <!-- main container -->
+    <div class="container">
+      <!-- box one section -->
+      <div class="primary">
+        <h3>
+          Join our community
+        </h3>
 
-        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-        <style>
-            .attribution {
-                font-size: 11px;
-                text-align: center;
-            }
-            .attribution a {
-                color: hsl(228, 45%, 44%);
-            }
-        </style>
-    </head>
-    <body>
-        <!-- main container -->
-        <div class="container">
-            <!-- box one section -->
-            <div class="box-one">
-                <h3>
-                    Join our community
-                </h3>
+        <p class="sub-title">
+          30-day, hassle-free money back guarantee
+        </p>
 
-                <p class="sub-title">
-                    30-day, hassle-free money back guarantee
-                </p>
+        <p class="description">
+          Gain access to our full library of tutorials along with expert code
+          reviews. Perfect for any developers who are serious about honing their
+          skills.
+        </p>
+      </div>
+      <!-- box one section end -->
 
-                <p class="description">
-                    Gain access to our full library of tutorials along with
-                    expert code reviews. Perfect for any developers who are
-                    serious about honing their skills.
-                </p>
-            </div>
-            <!-- box one section end -->
-
-            <!-- box two section -->
-            <div class="box-two">
-                <h3>Monthly Subscription</h3>
-                <div class="price-tag">
-                    <p class="price">&dollar;29</p>
-                    <p class="info-price">per month</p>
-                </div>
-                <p class="info">
-                    Full access for less than &dollar;1 a day
-                </p>
-
-                <button>
-                    Sign Up
-                </button>
-            </div>
-            <!-- box two section end -->
-
-            <!-- box three section -->
-            <div class="box-three">
-                <h3>Why Us</h3>
-
-                <ul>
-                    <li class="list">Tutorials by industry experts</li>
-                    <li class="list">Peer &amp; expert code review</li>
-                    <li class="list">Coding exercises</li>
-                    <li class="list">Access to our GitHub repos</li>
-                    <li class="list">Community forum</li>
-                    <li class="list">Flashcard decks</li>
-                    <li class="list">New videos every week</li>
-                </ul>
-            </div>
-            <!-- box three section end -->
+      <!-- box two section -->
+      <div class="secondary">
+        <h3>Monthly Subscription</h3>
+        <div class="price-tag">
+          <p class="price">&dollar;29</p>
+          <p class="info-price">per month</p>
         </div>
-        <!-- main container end -->
+        <p class="info">
+          Full access for less than &dollar;1 a day
+        </p>
 
-        <!-- footer -->
-        <footer id="footer">
-            <p class="attribution">
-                Challenge by
-                <a
-                    href="https://www.frontendmentor.io?ref=challenge"
-                    target="_blank"
-                    >Frontend Mentor</a
-                >.
-                <span>
-                    Coded with <i class="fa fa-heart" aria-hidden="true"></i> by
-                    <a href="https://github.com/okawibawa" target="_blank"
-                        >Oka Wibawa</a
-                    >.
-                </span>
-            </p>
-        </footer>
-        <!-- footer end -->
-    </body>
+        <button>
+          Sign Up
+        </button>
+      </div>
+      <!-- box two section end -->
+
+      <!-- box three section -->
+      <div class="third">
+        <h3>Why Us</h3>
+
+        <ul>
+          <li class="list">Tutorials by industry experts</li>
+          <li class="list">Peer &amp; expert code review</li>
+          <li class="list">Coding exercises</li>
+          <li class="list">Access to our GitHub repos</li>
+          <li class="list">Community forum</li>
+          <li class="list">Flashcard decks</li>
+          <li class="list">New videos every week</li>
+        </ul>
+      </div>
+      <!-- box three section end -->
+    </div>
+    <!-- main container end -->
+
+    <!-- footer -->
+    <footer id="footer">
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >.
+        <span>
+          Coded with <i class="fa fa-heart" aria-hidden="true"></i> by
+          <a href="https://github.com/okawibawa" target="_blank">Oka Wibawa</a>.
+        </span>
+      </p>
+    </footer>
+    <!-- footer end -->
+  </body>
 </html>
