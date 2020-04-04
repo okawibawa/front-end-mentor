@@ -1,0 +1,196 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-image: url('./images/bg-mobile.svg');
+  background-color: hsl(257, 40%, 49%);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  padding-top: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 10px;
+}
+
+nav img {
+  margin-bottom: 40px;
+  width: 150px;
+}
+
+main,
+footer {
+  text-align: center;
+}
+
+main img {
+  width: 100%;
+  margin: 0 auto 60px;
+}
+
+.right-content h1 {
+  margin: 0;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+.right-content p {
+  margin: 0;
+  font-size: 18px;
+  padding: 25px 20px;
+}
+
+.right-content button {
+  margin: 0;
+  width: 180px;
+  padding: 12px;
+  border-radius: 20px;
+  border: none;
+  color: hsl(257, 40%, 49%);
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  margin: 0 auto 25px;
+}
+
+button:hover {
+  background-image: linear-gradient(
+    to right,
+    #b8cbb8 0%,
+    #b8cbb8 0%,
+    #b465da 0%,
+    #cf6cc9 33%,
+    #ee609c 66%,
+    #ee609c 100%
+  );
+  color: white;
+}
+
+button:focus {
+  outline: none;
+}
+
+.attribution {
+  margin: 0;
+  font-size: 10px;
+}
+
+.attribution span {
+  display: block;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: #ffe2ff;
+}
+
+.attribution a:hover {
+  text-decoration: none;
+  color: hsl(223, 79%, 74%);
+}
+
+.attribution i {
+  color: #ffe2ff;
+}
+
+.socials {
+  text-align: center;
+  margin: 0;
+}
+
+.socials ul {
+  margin: 0;
+  padding: 0;
+}
+
+.socials li {
+  list-style: none;
+  display: inline-block;
+  margin: 10px auto;
+}
+
+.border {
+  border: 1px solid white;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+
+.socials .border:hover {
+  background-color: white;
+  border: 1px solid white;
+}
+
+.socials i {
+  text-align: center;
+  margin: 6px auto;
+  color: white;
+}
+
+.socials .border:hover i {
+  color: hsl(257, 40%, 49%);
+}
+
+.socials li:nth-child(2) {
+  margin: 0 10px;
+}
+
+@media (min-width: 800px) {
+  nav img {
+    text-align: left;
+  }
+
+  .main-content {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .right-content {
+    width: 50%;
+  }
+
+  .left-content img {
+    max-width: 520px;
+    margin: 0;
+  }
+
+  .left-content {
+    width: 50%;
+  }
+
+  .right-content p {
+    padding: 25px 0;
+  }
+
+  .socials {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .socials i {
+    text-align: center;
+    margin: 6px auto;
+    color: white;
+  }
+
+  footer {
+    text-align: right;
+  }
+}
