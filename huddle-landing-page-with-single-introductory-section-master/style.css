@@ -55,12 +55,13 @@ main img {
 }
 
 .right-content button {
+  font-family: 'Open Sans';
   margin: 0;
   width: 180px;
   padding: 12px;
   border-radius: 20px;
+  background-color: white;
   border: none;
-  color: hsl(257, 40%, 49%);
   box-shadow: 0 0 18px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   margin: 0 auto 25px;
