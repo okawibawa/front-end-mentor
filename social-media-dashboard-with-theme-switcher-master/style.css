@@ -329,7 +329,6 @@ body.light .overview-today:hover {
     width: 695px;
     display: grid;
     grid-template-columns: repeat(2, 335px);
-    grid-template-rows: repeat(3, 100%);
     grid-gap: 25px;
     margin: 0 auto;
   }
@@ -345,7 +344,6 @@ body.light .overview-today:hover {
     width: 830px;
     display: grid;
     grid-template-columns: repeat(3, 260px);
-    grid-template-rows: repeat(2, 100%);
     grid-gap: 25px;
     margin: 0 auto;
   }
