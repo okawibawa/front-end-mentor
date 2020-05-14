@@ -1,126 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="./images/favicon-32x32.png"
-        />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-        <!-- css link -->
-        <link rel="stylesheet" href="style.css" />
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css" />
 
-        <!-- icon link -->
-        <link
-            rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-            integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
-            crossorigin="anonymous"
-        />
+    <!-- icon link -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
 
-        <title>Frontend Mentor | Intro component with sign up form</title>
-    </head>
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
 
-    <body>
-        <!-- container for main content -->
-        <div class="main-container">
-            <!-- left content container -->
-            <div class="left-container">
-                <h1>Learn to code by watching others</h1>
-                <p>
-                    See how experienced developers solve problems in real-time.
-                    Watching scripted tutorials is great, but understanding how
-                    developers think is invaluable.
-                </p>
-            </div>
-            <!-- left content container end -->
+  <body>
+    <!-- container for main content -->
+    <div class="main-container">
+      <!-- left content container -->
+      <div class="left-container">
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <!-- left content container end -->
 
-            <!-- right content container -->
-            <div class="right-container">
-                <div class="box box-promo">
-                    <p>
-                        <strong>Try it free 7 days</strong> then $20/mo.
-                        thereafter
-                    </p>
-                </div>
-                <div class="box box-info">
-                    <form id="form">
-                        <div class="form-control">
-                            <input
-                                id="firstname"
-                                type="text"
-                                placeholder="First Name"
-                            />
-                            <img src="./images/icon-error.svg" alt="" />
-                            <small class="error"
-                                >First Name cannot be empty</small
-                            >
-                        </div>
-                        <div class="form-control">
-                            <input
-                                id="lastname"
-                                type="text"
-                                placeholder="Last Name"
-                            />
-                            <img src="./images/icon-error.svg" alt="" />
-                            <small>Last Name cannot be empty</small>
-                        </div>
-                        <div class="form-control">
-                            <input
-                                id="email"
-                                type="email"
-                                placeholder="Email Address"
-                            />
-                            <img src="./images/icon-error.svg" alt="" />
-                            <small>Email cannot be empty</small>
-                            <!-- <small>Looks like this is not an email</small> -->
-                        </div>
-                        <div class="form-control">
-                            <input
-                                id="password"
-                                type="password"
-                                placeholder="Password"
-                            />
-                            <img src="./images/icon-error.svg" alt="" />
-                            <small>Password cannot be empty</small>
-                        </div>
-                        <button id="Submit">Claim your free trial</button>
-                    </form>
-                    <small class="small-info">
-                        By clicking the button, you are agreeing to our
-                        <a href="#"> Terms and Services</a>
-                    </small>
-                </div>
-            </div>
-            <!-- right content container end -->
+      <!-- right content container -->
+      <div class="right-container">
+        <div class="box box-promo">
+          <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
         </div>
-        <!-- container for main content end -->
+        <div class="box box-info">
+          <form id="form">
+            <div class="form-control">
+              <input id="firstname" type="text" placeholder="First Name" />
+              <img src="./images/icon-error.svg" alt="" />
+              <small class="error">First Name cannot be empty</small>
+            </div>
+            <div class="form-control">
+              <input id="lastname" type="text" placeholder="Last Name" />
+              <img src="./images/icon-error.svg" alt="" />
+              <small>Last Name cannot be empty</small>
+            </div>
+            <div class="form-control">
+              <input id="email" type="email" placeholder="Email Address" />
+              <img src="./images/icon-error.svg" alt="" />
+              <small>Email cannot be empty</small>
+              <!-- <small>Looks like this is not an email</small> -->
+            </div>
+            <div class="form-control">
+              <input id="password" type="password" placeholder="Password" />
+              <img src="./images/icon-error.svg" alt="" />
+              <small>Password cannot be empty</small>
+            </div>
+            <button id="Submit">Claim your free trial</button>
+          </form>
+          <small class="small-info">
+            By clicking the button, you are agreeing to our
+            <a href="#"> Terms and Services</a>
+          </small>
+        </div>
+      </div>
+      <!-- right content container end -->
+    </div>
+    <!-- container for main content end -->
 
-        <!-- footer -->
-        <footer id="footer">
-            <p class="attribution">
-                Challenge by
-                <a
-                    href="https://www.frontendmentor.io?ref=challenge"
-                    target="_blank"
-                    >Frontend Mentor</a
-                >.
-                <span>
-                    Coded with
-                    <i class="fa fa-heart" aria-hidden="true"></i> by
-                    <a href="https://github.com/okawibawa" target="_blank"
-                        >Oka Wibawa</a
-                    >.
-                </span>
-            </p>
-        </footer>
-        <!-- footer end -->
+    <!-- footer -->
+    <footer id="footer">
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >.
+        <span>
+          Coded with
+          <i class="fa fa-heart" aria-hidden="true"></i> by
+          <a href="https://github.com/okawibawa" target="_blank">Oka Wibawa</a>.
+        </span>
+      </p>
+    </footer>
+    <!-- footer end -->
 
-        <script src="script.js"></script>
-    </body>
+    <script src="script.js"></script>
+  </body>
 </html>

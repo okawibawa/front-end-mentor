@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --very-light-grayish-blue: hsl(240, 78%, 98%);
+  --light-grayish-blue: hsl(234, 14%, 74%);
+  --grayish-blue: hsl(233, 13%, 49%);
+  --dark-grayish-blue: hsl(232, 13%, 33%);
+  --linear-gradient: linear-gradient(
+    115deg,
+    hsl(236, 72%, 79%) 0%,
+    hsl(237, 63%, 64%) 100%
+  );
+}
+
+html {
+  font-size: 15px;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  background-color: var(--very-light-grayish-blue);
+  position: relative;
+  overflow-x: hidden;
+}
+
+.container::before {
+  content: '';
+  background-image: url('./images/bg-top.svg');
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: 100%;
+  max-width: 375px;
+  height: 100%;
+  max-width: 400px;
+  top: -50px;
+  right: -160px;
+  z-index: -1;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/* header style */
+header {
+  margin-bottom: 90px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 15px;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--grayish-blue);
+  padding-bottom: 25px;
+}
+
+.category-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px auto;
+  color: var(--light-grayish-blue);
+}
+
+.label {
+  width: 50px;
+  height: 25px;
+  background: var(--linear-gradient);
+  border-radius: 40px;
+  margin: 0 15px;
+  position: relative;
+  cursor: pointer;
+}
+
+.ball {
+  position: absolute;
+  top: 3px;
+  right: 2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: transform 0.2s linear;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(-26px);
+  background-color: white;
+}
+
+/* main style */
+main {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.2rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 25px 15px;
+  margin: auto;
+  margin-bottom: 25px;
+  width: 100%;
+  max-width: 350px;
+}
+
+.card p {
+  color: var(--grayish-blue);
+  padding: 15px 0 15px 0;
+  border-bottom: 1px solid hsl(240, 20%, 90%);
+}
+
+.card.second-container p {
+  border-bottom: 1px solid hsl(238, 38%, 85%);
+}
+
+.card p:first-child {
+  border-bottom: none;
+}
+
+.card .price {
+  font-size: 3.2rem;
+  color: var(--dark-grayish-blue);
+  padding-bottom: 25px;
+}
+
+.price-monthly {
+  display: block;
+}
+
+.price-annually {
+  display: none;
+}
+
+.btn {
+  display: block;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #fff;
+  margin-top: 25px;
+  padding: 12px 0;
+  border-radius: 6px;
+  width: 100%;
+  background: var(--linear-gradient);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 1px solid;
+  transition: 400ms all;
+}
+
+.second-container {
+  background: var(--linear-gradient);
+}
+
+.second-container p,
+.card .second-price.price-monthly,
+.card .second-price.price-annually {
+  color: var(--very-light-grayish-blue);
+}
+
+.btn.second-btn {
+  color: hsl(237, 63%, 64%);
+  background: #fff;
+  border: 1px solid white;
+}
+
+.btn:hover {
+  color: hsl(237, 63%, 64%);
+  background: transparent;
+}
+
+.btn.second-btn:hover {
+  color: white;
+  background: transparent;
+}
+
+/* footer */
+footer {
+  font-size: 0.8rem;
+}
+
+footer a {
+  cursor: pointer;
+}
+
+/* responsive breakpoints */
+@media (min-width: 1100px) {
+  .container::before {
+    content: '';
+    background-image: url('./images/bg-top.svg');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  .container::after {
+    content: '';
+    background-image: url('./images/bg-bottom.svg');
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  header {
+    margin-bottom: 50px;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+
+  .card.first-container,
+  .card.third-container {
+    margin-bottom: 0;
+    margin-bottom: 16px;
+  }
+
+  .card.second-container {
+    margin-bottom: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
