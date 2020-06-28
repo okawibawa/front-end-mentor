@@ -1,0 +1,11 @@
+// Import font url from Google Fonts and change the $fontFamily variable to the corresponding font you are using
+// @import url('')
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+// Font family
+$fontFamily: 'Bai Jamjuree', sans-serif;
+
+// Font weight
+// Adjust these values according to the font weight you are using
+$regular: 400;
+$semiBold: 600;

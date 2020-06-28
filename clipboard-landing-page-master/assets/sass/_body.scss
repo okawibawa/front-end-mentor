@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  color: $grayishBlue;
+  background: $bodyBackground;
+  text-align: center;
+  line-height: $bodyLineHeight;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $darkGrayishBlue;
+  }
+
+  h2 {
+    font-size: $fontSizeHeading;
+  }
+
+  .container {
+    margin: auto;
+    width: 85%;
+    max-width: 1000px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    color: $grayishBlue;
+    text-decoration: none;
+  }
+
+  .btn {
+    border-radius: 50px;
+    border-bottom: 3px solid rgba($color: #000000, $alpha: 0.125);
+    color: #f0f0f0;
+    display: block;
+    font-weight: 600;
+    padding: 15px 80px;
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+  }
+
+  .btn:hover {
+    opacity: 0.9;
+    transform: scale(0.985);
+  }
+
+  .btn.green {
+    background-color: $strongCyan;
+    margin-bottom: 35px;
+    box-shadow: 0 2px 20px rgba($color: $strongCyan, $alpha: 0.6);
+  }
+
+  .btn.green:hover {
+    box-shadow: 0 2px 20px rgba($color: $strongCyan, $alpha: 0.8);
+  }
+
+  .btn.blue {
+    background-color: $lightBlue;
+    box-shadow: 0 2px 20px rgba($color: $lightBlue, $alpha: 0.6);
+  }
+
+  .btn.blue:hover {
+    box-shadow: 0 2px 20px rgba($color: $lightBlue, $alpha: 0.8);
+  }
+}

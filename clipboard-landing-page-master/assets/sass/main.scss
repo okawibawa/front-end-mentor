@@ -1,0 +1,147 @@
+////////////////////////////////////////////////////////////
+// * Template settings
+
+// Fonts
+@import 'font';
+// Themes
+@import 'variables';
+////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////
+// * Layout
+
+// General setting
+@import 'body';
+////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////
+// * Main Style
+header {
+  background-image: url('../images/bg-header-mobile.png');
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  padding: 120px 0 0 0;
+  margin-bottom: 165px;
+
+  .logo img {
+    width: 100px;
+    margin-bottom: 110px;
+  }
+
+  .welcome-text h1 {
+    color: $darkGrayishBlue;
+    font-size: $fontSizeHeadingLarge;
+    margin-bottom: 20px;
+  }
+
+  .welcome-text p {
+    margin-bottom: 50px;
+  }
+}
+
+.content {
+  margin-bottom: 100px;
+
+  h2 {
+    margin-bottom: 25px;
+  }
+
+  p {
+    margin-bottom: 66px;
+  }
+
+  .left img {
+    margin-bottom: 60px;
+  }
+
+  .right h3 {
+    margin-bottom: 8px;
+  }
+
+  .right p {
+    margin-bottom: 60px;
+  }
+}
+
+.content-top {
+  margin-bottom: 195px;
+}
+
+.features-section {
+  margin-bottom: 125px;
+
+  h2 {
+    margin-bottom: 25px;
+  }
+
+  .features img {
+    width: 45px;
+    margin-bottom: 35px;
+  }
+
+  .features h3 {
+    margin-bottom: 25px;
+  }
+}
+
+.partners img {
+  margin: auto;
+  margin-bottom: 60px;
+  display: block;
+  width: 140px;
+}
+
+.cta-content {
+  p {
+    margin-bottom: 40px;
+  }
+}
+
+footer {
+  background-color: #f5f6f8;
+  padding: 50px 0;
+
+  img {
+    margin: auto;
+    margin-bottom: 45px;
+    width: 55px;
+  }
+
+  ul {
+    margin-bottom: 50px;
+  }
+
+  li {
+    margin-bottom: 35px;
+  }
+
+  a {
+    color: $darkGrayishBlue;
+  }
+
+  .socials li {
+    display: inline;
+  }
+
+  .socials li:nth-last-of-type(2) {
+    margin: 0 20px;
+  }
+
+  .socials img {
+    width: 25px;
+    margin: 0;
+  }
+
+  .socials li a img {
+    fill: tan;
+  }
+
+  li a:hover {
+    color: $strongCyan;
+  }
+
+  .socials li a:hover img {
+    filter: invert(57%) sepia(77%) saturate(352%) hue-rotate(121deg) brightness(86%) contrast(83%);
+  }
+}
